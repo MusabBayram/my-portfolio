@@ -100,34 +100,44 @@ export default function Home() {
             <div>
               <pre>
                 <code className="language-js">
-                  {/* <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
-                    <span>// Portfolio.js </span>
-                  </div> */}
-                  <p>
-                    {/* <span className="text-gray-500">//</span>{" "} */}
-                    <span className="text-purple-300">Todo:</span> You can drag
-                    these balloons 🎈🎈
-                  </p>
-
-                  <div className="flex items-center space-x-4">
+                  <div className="flex items-center space-x-5">
                     <img
                       src="https://avatars.githubusercontent.com/u/34100687?v=4"
                       alt="Me"
-                      className="w-10 h-10 rounded-full"
+                      className="w-20 h-20 rounded-full"
                     />
 
                     <div className="">
                       <p className="text-sm">
-                        <span className="text-red-800"> {">"} </span> const
-                        techWeb
-                        <span className="font-bold text-red-800">1</span> =
-                        ["Reactjs", "Nextjs", "Graphql", "Nodejs"];{" "}
+                        Selamlar,
                       </p>
                       <p className="text-sm">
-                        <span className="text-red-800"> {">"} </span> const
-                        techWeb
-                        <span className="font-bold text-red-800">2</span> =
-                        ["Solidity", "Web3.js", "Ethers.js"];{" "}
+                        Ben Musab, 2017'de Pamukkale Üniversitesi'nde başladığım eğitim hayatımı
+                      </p>
+                      <p className="text-sm">
+                        2021 de onur öğrencisi olarak tamamladım.  
+                      </p>
+                      <br></br>
+                      <p className="text-sm">
+                        Eğitim hayatımda öğrendiklerimi ve yazılım konusundaki hevesimi hiç kaybetmeden 
+                      </p>
+                      <p className="text-sm">
+                        bu sektörde kendimi geliştirmeye devam etmek için sabırsızlanıyorum.
+                      </p>
+                      <br></br>
+                      <p className="text-sm">
+                        React Native, Unity3D&C#, Python, Java, MySQL, HTML5, CSS3... Gibi bir çok dilde 
+                      </p>
+                      <p className="text-sm">
+                        deneyimlerim bulunsa da son zamanlarda React Native ve Unity3D&C# ile daha fazla 
+                      </p>
+                      <p className="text-sm">
+                        zaman geçirdim diyebilirim. Ancak şu anda kendimi web yazılımında geliştirmekteyim.
+                      </p>
+                      <br></br>
+                      <p>
+                        <span className="text-purple-300">Todo:</span> You can drag
+                        these balloons 🎈🎈
                       </p>
                     </div>
                   </div>
