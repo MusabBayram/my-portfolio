@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 const ProjectCard = ({
   project: { title, description, image, source, tags },
 }) => {
+  console.log(image);
   return (
     <motion.a
       href={source}

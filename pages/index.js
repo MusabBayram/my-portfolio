@@ -100,33 +100,33 @@ export default function Home() {
             <div>
               <pre>
                 <code className="language-js">
-                  <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
+                  {/* <div className="flex items-center py-0 my-0 space-x-4 text-gray-500">
                     <span>// Portfolio.js </span>
-                  </div>
+                  </div> */}
                   <p>
-                    <span className="text-gray-500">//</span>{" "}
+                    {/* <span className="text-gray-500">//</span>{" "} */}
                     <span className="text-purple-300">Todo:</span> You can drag
-                    these balloons I'm really in love with them 🎈🎈
+                    these balloons 🎈🎈
                   </p>
 
                   <div className="flex items-center space-x-4">
                     <img
-                      src="https://pbs.twimg.com/profile_images/1472142550731571205/soY8MW5w_400x400.jpg"
+                      src="https://avatars.githubusercontent.com/u/34100687?v=4"
                       alt="Me"
                       className="w-10 h-10 rounded-full"
                     />
 
                     <div className="">
                       <p className="text-sm">
-                        <span className="text-pink-300"> {">"} </span> const
+                        <span className="text-red-800"> {">"} </span> const
                         techWeb
-                        <span className="font-bold text-pink-300">2</span> =
+                        <span className="font-bold text-red-800">1</span> =
                         ["Reactjs", "Nextjs", "Graphql", "Nodejs"];{" "}
                       </p>
                       <p className="text-sm">
-                        <span className="text-pink-300"> {">"} </span> const
+                        <span className="text-red-800"> {">"} </span> const
                         techWeb
-                        <span className="font-bold text-pink-300">3</span> =
+                        <span className="font-bold text-red-800">2</span> =
                         ["Solidity", "Web3.js", "Ethers.js"];{" "}
                       </p>
                     </div>
@@ -136,15 +136,6 @@ export default function Home() {
                     <Link href="/projects">
                       <a className="transition duration-300">Projects</a>
                     </Link>
-
-                    <a
-                      href="https://www.youtube.com/channel/UCfGXEo2uCkVqcIqkIaFNGcA"
-                      target={"_blank"}
-                      rel="noopener noreferrer"
-                      className="transition duration-300"
-                    >
-                      Youtube
-                    </a>
                   </div>
                 </code>
               </pre>
