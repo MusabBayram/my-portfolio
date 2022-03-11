@@ -50,21 +50,21 @@ export default function Home({owners}) {
         dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
       />
       <main className="w-full h-full">
-        <section className="h-full max-w-5xl mx-auto pt-16 md:pt-8">
+        <section className="h-full max-w-5xl mx-auto pt-5 md:pt-8">
           <div className="flex flex-col items-center justify-center md:items-start">
             <h4 className="text-lg text-gray-800 dark:text-white">
               <span className="text-xl font-normal">Hello,</span> I'm
             </h4>
-            <h1 className="mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
+            <h1 className="mt-2 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
               Musab Bayram
             </h1>
 
-            <div className="mt-5 text-2xl font-normal text-transparent bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
+            <div className="mt-2 self-center md:self-start text-2xl font-normal text-transparent bg-gradient-to-r from-pink-500 via-indigo-400 to-purple-700 bg-clip-text md:mt-3">
               <TypingAnimation />
             </div>
 
             {/* Social Accounts */}
-            <div className="flex items-center mt-8 space-x-6 md:mt-4">
+            <div className="flex items-center mt-6 space-x-6 md:mt-4 mb-2">
               <motion.a
                 href="https://github.com/MusabBayram"
                 target={"_blank"}
@@ -113,9 +113,9 @@ export default function Home({owners}) {
                 </p>
               </div>
           </div>
-          <div className="flex items-center">
+          <div className="flex md:justify-start justify-center">
             <Link href="/projects">
-              <a className="mt-5 md:mt-8 text-amber-500">Projects</a>
+              <a className="mt-5 md:mt-8 text-amber-500 mb-14">Projects</a>
             </Link>
           </div>
         </section>
