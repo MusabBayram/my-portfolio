@@ -8,7 +8,7 @@ import { getAllProjects } from "../../functions/getAllProjects";
 
 export default function ProjectsPage({ projects }) {
   return (
-    <Layout title={"Portfolio / Projects"} description={"My Projects"}>
+    <Layout title={"Musab / Projects"} description={"My Projects"}>
       <section className="h-full max-w-5xl pt-4 mx-auto mb-16 md:pt-16">
         <Link href="/">
           <a className="flex items-center space-x-4 font-semibold pb-6 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200">

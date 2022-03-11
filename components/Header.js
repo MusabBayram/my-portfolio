@@ -13,7 +13,7 @@ const Header = () => {
         src={theme !== null && theme === "light" ? "/images/on.svg" : "/images/off.svg"}
         alt="ball-1"
         className="md:scale-100  px-6 py-2 scale-75"
-        //whileHover={{ scale: 1.05, transition: { duration: 0.4 } }}
+        whileHover={{ scale: 1.05, transition: { duration: 0.4 } }}
         drag
         dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
         onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

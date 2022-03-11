@@ -29,7 +29,7 @@ const ProjectCard = ({
             {tags.map((tag, key) => (
               <span
                 key={key}
-                className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-pink-100 bg-pink-700 rounded"
+                className="inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-pink-100 bg-blue-500 rounded"
               >
                 {tag}
               </span>

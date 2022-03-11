@@ -8,6 +8,8 @@ import GithubIcon from "../components/icons/Github.js";
 import TwitterIcon from "../components/icons/Twitter.js";
 import LinkedinIcon from "../components/icons/Linkedin.js";
 
+import { getUserAbout } from "../functions/getUserAbout";
+
 const TypingAnimation = React.memo(
   () => {
     return (
@@ -27,9 +29,9 @@ const TypingAnimation = React.memo(
   },
   (props, prevProps) => true
 );
-export default function Home() {
+export default function Home({owners}) {
   return (
-    <Layout title={"Portfolio"} description={"My Portfolio"}>
+    <Layout title={"Musab"} description={"My Portfolio"}>
       <motion.img
         src="/images/ball-1.svg"
         alt="ball-1"
@@ -74,7 +76,7 @@ export default function Home() {
               </motion.a>
 
               <motion.a
-                href="" //link henüz yok
+                href="https://twitter.com/MBahadirBayram"
                 target={"_blank"}
                 rel="noopener noreferrer"
                 className="flex items-center justify-center text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
@@ -95,64 +97,38 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Code Area */}
-          <article className="mt-3 prose md:mt-4 md:prose-lg dark:prose-dark ">
-            <div>
-              <pre>
-                <code className="language-js">
-                  <div className="flex items-center space-x-5">
-                    <img
-                      src="https://avatars.githubusercontent.com/u/34100687?v=4"
-                      alt="Me"
-                      className="w-20 h-20 rounded-full"
-                    />
-
-                    <div className="">
-                      <p className="text-sm">
-                        Selamlar,
-                      </p>
-                      <p className="text-sm">
-                        Ben Musab, 2017'de Pamukkale Üniversitesi'nde başladığım eğitim hayatımı
-                      </p>
-                      <p className="text-sm">
-                        2021 de onur öğrencisi olarak tamamladım.  
-                      </p>
-                      <br></br>
-                      <p className="text-sm">
-                        Eğitim hayatımda öğrendiklerimi ve yazılım konusundaki hevesimi hiç kaybetmeden 
-                      </p>
-                      <p className="text-sm">
-                        bu sektörde kendimi geliştirmeye devam etmek için sabırsızlanıyorum.
-                      </p>
-                      <br></br>
-                      <p className="text-sm">
-                        React Native, Unity3D&C#, Python, Java, MySQL, HTML5, CSS3... Gibi bir çok dilde 
-                      </p>
-                      <p className="text-sm">
-                        deneyimlerim bulunsa da son zamanlarda React Native ve Unity3D&C# ile daha fazla 
-                      </p>
-                      <p className="text-sm">
-                        zaman geçirdim diyebilirim. Ancak şu anda kendimi web yazılımında geliştirmekteyim.
-                      </p>
-                      <br></br>
-                      <p>
-                        <span className="text-purple-300">Todo:</span> You can drag
-                        these balloons 🎈🎈
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center space-x-8">
-                    <Link href="/projects">
-                      <a className="transition duration-300">Projects</a>
-                    </Link>
-                  </div>
-                </code>
-              </pre>
+          <div className="md:flex md:items-center mt-3 md:mt-6 bg-slate-200 dark:bg-slate-800 rounded-xl p-5 md:p-8 ">
+            <div className="flex  w-full justify-center md:w-1/6">
+              <img
+                src={owners[0].pphoto.url}
+                alt="Me"
+                className="md:w-20 md:h-20 w-1/4 h-1/4 rounded-full mb-4 md:m-0"
+              />
             </div>
-          </article>
+              <div className="w-full flex items-center ">
+                <p className="text-sm text-center md:text-left ">
+                  Selamlar,
+                  <br/>
+                  {owners[0].aboutme}
+                </p>
+              </div>
+          </div>
+          <div className="flex items-center">
+            <Link href="/projects">
+              <a className="mt-5 md:mt-8 text-amber-500">Projects</a>
+            </Link>
+          </div>
         </section>
       </main>
     </Layout>
   );
 }
+
+export const getStaticProps = async () => {
+  const owners = await getUserAbout();
+  return {
+    props: {
+      owners,
+    },
+  };
+};
