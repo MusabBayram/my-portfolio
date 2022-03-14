@@ -31,7 +31,7 @@ const TypingAnimation = React.memo(
 );
 export default function Home({owners}) {
   return (
-    <Layout title={"Musab"} description={"My Portfolio"}>
+    <Layout title={"Portfolio"} description={"My Portfolio"}>
       <motion.img
         src="/images/ball-1.svg"
         alt="ball-1"
