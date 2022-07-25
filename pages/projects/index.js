@@ -8,7 +8,6 @@ import { getAllProjects } from "../../functions/getAllProjects";
 
 export default function ProjectsPage({ projects }) {
   
-  
   return (
     <Layout title={"Musab / Projects"} description={"My Projects"}>
       <section className="h-full max-w-5xl pt-4 mx-auto mb-16 md:pt-16">
